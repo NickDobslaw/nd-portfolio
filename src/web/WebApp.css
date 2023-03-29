@@ -1,0 +1,281 @@
+/* html {
+    background-color: black;
+    background-image: url("../images/background-trans3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position-x: center;
+    background-position-y: -1600%;
+    padding: 0px 100px;
+  } */
+  .gradient-bg {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 110%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 600ms ease-out,
+      visibility 1200ms ease-out;
+    will-change: opacity, transform, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+  .wrapper .sidebar {
+    position: fixed;
+    background-color: white;
+    z-index: 80;
+    top: 0;
+    left: 0;
+    mix-blend-mode: screen;
+    width: 100%;
+    height: 80px;
+    padding: 10px 0;
+    transition: all 0.5s ease;
+    display: table;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 3px solid white;
+  }
+  .shopButton {
+    background: black;
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    border-radius: 10%;
+    padding: 15px 15px 15px 15px;
+  }
+  .shopButton a:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+  .wrapper .sidebar h3 {
+  color: black;
+    display: table-cell;
+    opacity: 100%;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .textCell {
+    display: table-cell;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    width: 25%;
+  }
+  .logoCell {
+    display: table-cell;
+    background-color: black;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    width: 0%;  
+  }
+  .wrapper .sidebar a:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  .wrapper .sidebar img {
+    display: table-cell;
+    width: 140px;
+    height: 100px;
+    margin: auto;
+    /* margin: 0 auto; */
+  }
+  .loadingWaves {
+    width: 30%;
+    margin: auto;
+    margin-top: 300px;
+  }
+  .page-wrap {
+    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    padding: 0px 20%;
+    margin: 0 auto;
+    height: 50%;
+  }
+  @font-face {
+    font-family: conthrax;
+    src: url(../images/fonts/conthrax-sb.otf);
+  }
+  .page-wrap h1 {
+    font-family: conthrax;
+    text-align: center;
+    color: white;
+  }
+  .homepage {
+    margin: 0 auto;
+    display: table;
+  }
+  .homepage img {
+    margin: 110px 0px 200px 0px;
+    width: 100%;
+  }
+  .tooltipElement {
+    padding: 3px 3px 3px 3px;
+    opacity: 75%;
+    position: fixed;
+  }
+  .galleryWrapper {
+    position: relative;
+  }
+  .galleryPhoto {
+    position: relative;
+  }
+  .igGallery {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+  }
+  .shopPage {
+    text-align: center;
+  }
+  .hoodiePhoto {
+    width: 67%;
+  }
+  .buyButton img {
+    height: 25px;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+  .buyButton {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  .logoTableMobile {
+    margin: 0 auto;
+    display: table;
+  }
+  .logoTableMobile img {
+    display: inline-block;
+    height: 100px;
+  }
+  .logoTable {
+    width: 100%;
+  }
+  .logoTable img {
+    display: inline-block;
+    height: 100%;
+  }
+  .aboutFrame {
+    display: table;
+  }
+  .aboutPhotos {
+    margin: 0 auto;
+    display: table;
+  }
+  .aboutPhotos img {
+    display: inline-block;
+    height: 380px;
+    margin: 0px 0px 10px 10px;
+  }
+  .photosVert {
+    float: left;
+    margin-right: 10px;
+  }
+  .photosVert img {
+    display: block;
+    height: 230px;
+    margin: 0px 0px 10px 10px;
+  }
+  .aboutText {
+    margin: 0; 
+  }
+  .aboutText img {
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+  }
+  .paraAbout {
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+  }
+  .cpmasPhoto {
+    margin: 0 auto;
+    display: table;
+  }
+  .cpmasPhoto img {
+    vertical-align: middle;
+    height: 100px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: none;
+  }
+  .bottomLogosMobile img {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bottomLogos img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .linksRow1 {
+    display:table;
+    margin: 0 auto;
+  }
+  .linksRow2 {
+    display:table;
+    margin: 0 auto;
+    padding-bottom: 12px;
+  }
+  .links img {
+    height: 120px;
+    display: inline-block;
+    padding-right: 10px;
+  }
+  .links h2 {
+    color: white;
+    display:table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .togfatherLogo {
+    margin: 0 auto;
+    display: table;
+  }
+  .togfatherLogo img {
+    margin: 110px 0px 0px 0px;
+    width: 100%;
+  }
